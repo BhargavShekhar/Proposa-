@@ -10,10 +10,11 @@ HTML, body{
 }
 
 body{
-    /* display: flex;
+    display: flex;
     align-items: flex-start;
-    justify-content: center; */
+    justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 .main{
@@ -64,16 +65,20 @@ body{
 }
 
 .kiss{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: relative; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    margin-top: 14vh;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     z-index: -10;
 }
 
 h1{
     text-align: center;
+    margin-top: 18vh;
 }
 
 @media (max-width: 1000px) {
