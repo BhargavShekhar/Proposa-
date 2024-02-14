@@ -52,3 +52,13 @@ if(flg == 0){
     play.addEventListener("click", clickHandler)
     flg = 1
 }
+
+var docTitle = document.title
+
+window.addEventListener("blur", () => {
+    document.title = "Please Come back :("
+})
+
+window.addEventListener("focus", () => {
+    document.title = docTitle
+})
