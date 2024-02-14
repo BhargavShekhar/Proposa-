@@ -8,7 +8,8 @@ var height = 50
 var width = 50
 
 no.addEventListener("click", () => {
-    if(cnt == 14){
+    if (cnt == 14) {
+        
         cnt = 0
     }
 
@@ -17,8 +18,8 @@ no.addEventListener("click", () => {
     yes.style.height = `${height}px`
     yes.style.width = `${width}px`
 
-    height += 50
-    width += 50
+    height += 10
+    width += 10
 
     cnt += 1
     console.log(cnt)
@@ -48,7 +49,7 @@ function clickHandler() {
     play.removeEventListener("click", clickHandler)
 }
 
-if(flg == 0){
+if (flg == 0) {
     play.addEventListener("click", clickHandler)
     flg = 1
 }
